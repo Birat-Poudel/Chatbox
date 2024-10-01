@@ -1,0 +1,12 @@
+requests
+beautifulsoup4
+langchain-google-genai
+python-dotenv
+langchain
+langchain-community
+langchain-huggingface
+transformers
+sentence-transformers
+faiss-cpu
+pyyaml
+streamlit

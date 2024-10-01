@@ -1,0 +1,6 @@
+model:
+  embeddings_model: "sentence-transformers/all-MiniLM-L6-v2"
+
+vector_store:
+  chunk_size: 1000
+  chunk_overlap: 0
