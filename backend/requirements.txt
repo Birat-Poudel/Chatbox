@@ -10,3 +10,5 @@ sentence-transformers
 faiss-cpu
 pyyaml
 streamlit
+fastapi
+pydantic
