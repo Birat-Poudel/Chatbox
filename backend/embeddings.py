@@ -1,11 +1,11 @@
-from langchain_huggingface import HuggingFaceEmbeddings
-from yaml import safe_load
+from langchain_cohere import CohereEmbeddings
+from dotenv import load_dotenv
+import os
 
-def get_embeddings(config_path="config.yml"):
-    with open(config_path, 'r') as f:
-        config = safe_load(f)
-        
-    model_name = config['model']['embeddings_model']
-    embeddings = HuggingFaceEmbeddings(model_name=model_name)
-    
-    return embeddings
+load_dotenv(dotenv_path=".env.local")
+
+def get_embeddings():
+    cohere_embeddings = CohereEmbeddings(
+        cohere_api_key=os.getenv("COHERE_API_KEY"), model="embed-english-v3.0"
+    )
+    return cohere_embeddings

@@ -1,6 +1,5 @@
-backend-venv
+.env.local
 logs
-main.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
